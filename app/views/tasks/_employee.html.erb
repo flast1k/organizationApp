@@ -1,0 +1,9 @@
+<tr>
+        <td><p><%= task.first_name %></p></td>
+        <td><p><%= task.second_name %></p></td>
+        <td><%= link_to 'Show', task_url(task) %></td>
+        <td><%= link_to 'Edit', edit_task_path(task) %></td>
+        <td><%= link_to 'Destroy', employee_path(task),
+                        method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+</tr>

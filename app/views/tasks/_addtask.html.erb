@@ -1,0 +1,21 @@
+<%= form_for([@employee, @employee.tasks.build]) do |f| %>
+    <p>
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+    </p>
+    <p>
+        <%= f.label :description %><br>
+        <%= f.text_field :description %>
+    </p>
+    <p>
+        <%= f.label :spent_time %><br>
+        <%= f.text_field :spent_time %>
+    </p>
+    <p>
+        <%= f.label :status %><br>
+        <%= f.text_field :status %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>

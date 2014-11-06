@@ -1,0 +1,22 @@
+/**
+ *= require extjs4/resources/css/ext-all
+ */
+.rootClass{
+    font-weight: bold;
+    cursor:pointer;
+}
+.organizationClass
+{
+    padding-left: 10px;
+    cursor:pointer;
+}
+.employeeClass
+{
+    padding-left: 20px;
+    cursor:pointer;
+}
+.taskClass
+{
+    padding-left: 30px;
+    cursor:pointer;
+}

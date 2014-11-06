@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  spent_time: 2014-09-25 15:39:15
+  status: MyString
+  employee_id: 
+
+two:
+  name: MyString
+  description: MyText
+  spent_time: 2014-09-25 15:39:15
+  status: MyString
+  employee_id: 

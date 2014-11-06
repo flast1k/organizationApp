@@ -1,0 +1,29 @@
+<p>
+    <strong>Name:</strong>
+    <%= @organization.name %>
+</p>
+
+<p>
+    <strong>Site:</strong>
+    <%= @organization.site %>
+</p>
+
+<p>
+    <strong>Description:</strong>
+    <%= @organization.description %>
+</p>
+<h2>Employees:</h2>
+<table>
+    <tr>
+        <th><strong>First name</strong></th>
+        <th><strong>Second name</strong></th>
+    </tr>
+    <%= render @organization.employees %>
+
+</table>
+
+<h2>Add a employee:</h2>
+<%= render 'employees/addemploy' %>
+
+<%= link_to 'Back', organizations_path %>
+<%= link_to 'Edit', edit_organization_path(@organization) %>

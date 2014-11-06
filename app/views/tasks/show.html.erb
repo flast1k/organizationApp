@@ -1,0 +1,21 @@
+<p>
+    <strong>Name:</strong>
+    <%= @task.name %>
+</p>
+
+<p>
+    <strong>Description:</strong>
+    <%= @task.description %>
+</p>
+
+<p>
+    <strong>Spen time:</strong>
+    <%= @task.spent_time %>
+</p>
+<p>
+    <strong>Status:</strong>
+    <%= @task.status %>
+</p>
+
+<%= link_to 'Back', employee_path(Employee.find(@task.employee_id)) %>
+<%= link_to 'Edit', edit_task_path(@task) %>

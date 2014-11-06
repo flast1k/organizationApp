@@ -1,0 +1,25 @@
+<%= form_for([@organization, @organization.employees.build]) do |f| %>
+    <p>
+        <%= f.label :first_name %><br>
+        <%= f.text_field :first_name %>
+    </p>
+    <p>
+        <%= f.label :second_name %><br>
+        <%= f.text_field :second_name %>
+    </p>
+    <p>
+        <%= f.label :phone %><br>
+        <%= f.text_field :phone %>
+    </p>
+    <p>
+        <%= f.label :hire_date %><br>
+        <%= f.text_field :hire_date %>
+    </p>
+    <p>
+        <%= f.label :place %><br>
+        <%= f.text_area :place %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>

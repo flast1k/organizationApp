@@ -1,0 +1,38 @@
+<p>
+    <strong>Fisrt name:</strong>
+    <%= @employee.first_name %>
+</p>
+
+<p>
+    <strong>Second name:</strong>
+    <%= @employee.second_name %>
+</p>
+
+<p>
+    <strong>Phone:</strong>
+    <%= @employee.phone %>
+</p>
+<p>
+    <strong>Hire date:</strong>
+    <%= @employee.hire_date %>
+</p>
+
+<p>
+    <strong>Place:</strong>
+    <%= @employee.place %>
+</p>
+
+<h2>Tasks:</h2>
+<table>
+    <tr>
+        <th><strong>Name</strong></th>
+        <th><strong>Description</strong></th>
+    </tr>
+    <%= render @employee.tasks %>
+</table>
+
+<h2>Add a task:</h2>
+<%= render 'tasks/addtask' %>
+
+<%= link_to 'Back', organization_path(Organization.find(@employee.organization_id)) %>
+<%= link_to 'Edit', edit_employee_path(@employee) %>
